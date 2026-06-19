@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.in Clone - Dummy App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <span class="logo-text">amazon</span><span class="logo-dot">.in</span>
+            </div>
+
+            <div class="nav-address">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon-container">
+                    <span class="add-second">India</span>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input type="text" id="searchInput" class="search-input" placeholder="Search Amazon.in">
+                <button id="searchBtn" class="search-icon-btn">🔍</button>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-signin">
+                    <p class="nav-line-1">Hello, sign in</p>
+                    <p class="nav-line-2">Account & Lists</p>
+                </div>
+                
+                <div class="nav-orders">
+                    <p class="nav-line-1">Returns</p>
+                    <p class="nav-line-2">& Orders</p>
+                </div>
+
+                <div class="nav-cart" id="cartBtn">
+                    <span class="cart-icon">🛒</span>
+                    <span id="cart-count" class="cart-badge">0</span>
+                    <span class="cart-text">Cart</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="hero-banner">
+            <p>You are on amazon.in. You can also shop on Amazon International for millions of products with fast local delivery.</p>
+        </div>
+
+        <section class="product-grid" id="productGrid">
+            </section>
+    </main>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="closeCartBtn">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            </div>
+        <div class="cart-total-section">
+            <p>Subtotal: <span class="total-price">₹<span id="cartTotalAmount">0</span></span></p>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">Proceed to Buy</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
